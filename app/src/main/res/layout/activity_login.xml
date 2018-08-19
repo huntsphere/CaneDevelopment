@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/usericon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/user"/>
+
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/usericon"
+        android:gravity="center"
+        android:height="50sp"
+        android:hint="नाव :"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@drawable/rounded_corner"/>
+
+    <ImageView
+        android:id="@+id/mobileicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mobicon"
+        android:layout_marginTop="35sp"
+        android:layout_below="@id/nameEditText"/>
+
+    <EditText
+        android:id="@+id/contactEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/mobileicon"
+        android:gravity="center"
+        android:layout_marginTop="70sp"
+        android:hint="मोबाईल नंबर"
+        android:textColorHint="@color/colorPrimary"
+        android:background="@drawable/rounded_corner"
+        android:height="50sp"/>
+    <Button
+        android:id="@+id/sendotpButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactEditText"
+        android:textSize="22sp"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/gradient_rounded"
+        android:textColor="@color/colorDarkBlue"
+        android:text="आो.टि.पी. पाठवा"
+        />
+    <EditText
+        android:id="@+id/otpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendotpButton"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_corner"
+        android:height="50sp"
+        android:hint="enter OTP"
+        android:textColorHint="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/otpEditText"
+        android:textColor="@color/colorDarkBlue"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/gradient_rounded"
+        android:textSize="22sp"
+        android:text="सत्यापित करा"
+        />
+
+</RelativeLayout>
